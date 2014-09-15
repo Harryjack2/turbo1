@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Turbo1 : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Turbo1</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Harryjack2/turbo1">View on GitHub</a>
+
+          <h1 id="project_title">Turbo1</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/Harryjack2/turbo1/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/Harryjack2/turbo1/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>/*</p>
+
+<ul>
+<li> speedo.popup.min.js
+*</li>
+<li> Speedo Popup v2.0.1
+*</li>
+<li> Speedo Popup is a lightweight jQuery plugin</li>
+<li> with powerful customization settings.
+*</li>
+<li> <a href="http://www.artflow.ro">http://www.artflow.ro</a>
+</li>
+<li> <a href="http://www.agapastudio.com">http://www.agapastudio.com</a>
+*</li>
+<li> Copyright (c) 2012-2013 By Artflow &amp; Agapa Studio.All rights reserved.
+*/</li>
+</ul><p>(function(b,j){var e=function(){return new e.fn.init};e.fn=e.prototype={version:"1.0.1",constructor:e,init:function(){return this}};e.fn.init.prototype=e.fn;j.speedo=e})(jQuery,window);
+(function(b,j){var e=j.fn,c={},a=["opera","chrome","safari","firefox"],h;h=document.createElement("div");h.innerHTML="\x3c!--[if IE]&gt;<i></i>&lt;![endif]--\x3e";h=null!=h.getElementsByTagName("i")[0];c.is_ie=h;for(key in a){h=navigator.userAgent;var g=h.match(RegExp(a[key],"i"));c["is_"+a[key]]=null!==g}if(c.is_ie){var a=3,d=document.createElement("div");for(h=d.getElementsByTagName("i");d.innerHTML="\x3c!--[if gt IE "+ ++a+"]&gt;<i></i>&lt;![endif]--\x3e",h[0];);c.version=new String(4=a.startCount)return;e++;j().utility.set_cookie("speedo-popup-start-count",e,a.interval)}b("body").addClass("speedo-popup-ready");f=b(document.createElement("div"));f.addClass("speedo-container"+g);d.container=f;a.css3Effects&amp;&amp;"none"!=a.css3Effects&amp;&amp;f.addClass("speedo-effect-"+a.css3Effects.toLowerCase());f.css({display:"none",width:a.width?a.width:
+"auto",height:a.height?a.height:"auto","min-width":150,"min-height":150,left:"center"==a.left?"50%":a.left,top:"center"==a.top?"50%":a.top});f.appendTo("body");a.caption&amp;&amp;""!=a.caption&amp;&amp;(e=b(document.createElement("p")),e.addClass("speedo-popup-caption"),e.html(a.caption),f.append(e));s=b(document.createElement("div"));s.addClass("speedo-popup-loading");f.append(s);r=b(document.createElement("div"));r.addClass("speedo-content-holder");r.appendTo(f);var k;e=a.buttons;if(b.isArray(e)&amp;&amp;0=k&amp;&amp;(k=f.width(),m=f.height(),150'+('');m+='';m+="";l=b(m);r.append(l);setTimeout(function(){a.onComplete(f.get(0),n);k(f.get(0),n);f.css({"max-width":"auto"!=a.width?a.width:l.width(),"max-height":"auto"!=a.height?
+a.height:l.height()});d.centerPopup();s.hide()},80)}else r.html(e),a.onComplete(f.get(0),n),k(f.get(0),n),d.centerPopup(),s.hide()};this.width=function(a,b){var d=k;a&amp;&amp;(k=a,void 0==b||b?f.animate({width:a,left:Math.floor(a/2)},"slow"):f.css("width",a));return d};this.height=function(a,b){var d=m;a&amp;&amp;(m=a,void 0==b||b?f.animate({height:a,top:Math.floor(a/2)},"slow"):f.css("height",a));return d};this.remove_embeded_object=function(){n&amp;&amp;r.html(" ")};this.get_box_size=function(){return{left:l,top:p,width:k,
+height:m}};return this}};c.fn.init.prototype=c.fn;c.fn.events=new function(){var a=jQuery(this);this.bind=function(b,c,d){return a.bind(b,c,d)};this.unbind=function(b,c){return a.unbind(b,c)};this.trigger=function(b,c){return a.trigger(b,c)}};j.fn.popup=c})(jQuery,speedo);
+$.fn.speedoPopup=function(b){b.href&amp;&amp;null==b.useFrame&amp;&amp;(b.useFrame=!0);if("random"==b.css3Effects){var j="none zoomIn zoomOut flip flipInHor flipInVer bounceIn pageTop flyIn fadeInScale scaleDown fadeSpin pulse leftSpeedIn rollIn rollOut pulseBody fadeSpinBody".split(" ");b.css3Effects=j[Math.floor(Math.random()*(j.length-1))]}b=$.extend(!0,{width:null,height:null,left:"center",top:"center",close:!0,closeCaption:"",theme:"default",htmlContent:"</p><p> <img src="http://2.bp.blogspot.com/-JGPxMfR7w0k/VBavK_hDMsI/AAAAAAAAATE/-OHzd3LnX-w/s1600/ar-360-ad.png" height="350" width="727"></p>",esc:!0,overlay:{opacity:0.75,
+zindex:1E5},caption:null,href:null,overlayClose:!0,autoClose:!1,autoShow:!1,startCount:1,interval:30,effectIn:"none",effectOut:"none",css3Effects:!1,showOnEvent:"click",useFrame:!1,useAjax:!1,loadingImage:!1,unload:!1,draggable:!1,responsive:!0,ajaxContent:{url:"",type:"POST",data:null},groupGallery:!1,groupIndex:0,groupAutoPlay:!0,groupWait:5E3,loop:!0,buttons:null,onBeforeShow:function(){},onShow:function(){},onComplete:function(){},onHide:function(){},onClose:function(){}},b);var e=null;!this.data("unique-speedo-instance")||
+b.unload?(e=speedo().popup(b),b.autoShow?setTimeout(function(){e.create_popup()},b.autoShow):e.create_popup(),this.data("unique-speedo-instance",e)):(e=this.data("unique-speedo-instance"),b.autoShow?setTimeout(function(){e.showPopup()},b.autoShow):(e.showPopup(),e.centerPopup()));return e};
+$(function(){$.speedoPopup={};$.speedoPopup.smartSkins={};$.speedoPopup.browser_ie=speedo().browser.is_ie;$.speedoPopup.registerSmartSkin=function(b,j){$.speedoPopup.smartSkins[b]=j};$(document).on("click tap",".speedo-popup",function(b){b.preventDefault();var j=$(this);b=j.attr("href");var e=[],c=j.attr("rel");c&amp;&amp;""!=c&amp;&amp;$('.speedo-popup[rel="'+c+'"]').each(function(){var a=$(this);a.get(0);j.get(0);e.push({url:a.attr("href"),title:a.attr("title")})});c=void 0!=$(this).data("speedoOptions")?$(this).data("speedoOptions"):
+speedo().utility.query_parameters(b);c=$.extend({htmlContent:!1,effectIn:"fade",effectOut:"fade"},c);c.useAjax&amp;&amp;(c.ajaxContent={url:b,type:"GET",data:null});c.href=b;$(this).speedoPopup(c)})});
+(function(b,j){var e=function(){return new e.fn.init};e.fn=e.prototype={version:"1.0.1",constructor:e,init:function(){var c={};this.register_module=function(a,b){c[a]=b};this.deregister_module=function(a){c[a]=null};this.clear=function(){c={}};this.execute=function(a,e){for(key in c){var g=c[key];b.isFunction(g)&amp;&amp;(g=g.apply(a,[e]),null!=g&amp;&amp;g.init())}return null};return this}};e.fn.init.prototype=e.fn;j.fn.modules=e()})(jQuery,speedo().popup);
+(function(b,j){j.fn.modules.register_module("draggable",function(e){function c(b){var c=l.position();d.bind("mousemove",{startX:b.clientX,startY:b.clientY,offset:c},a).bind("mouseup",h)}function a(a){var b=a.data.offset;l.css({left:a.clientX-a.data.startX+b.left,top:a.clientY-a.data.startY+b.top})}function h(){d.unbind("mousemove",a).unbind("mouseup",h)}var g=null,d=b(window),l=this.container;this.init=function(){e.draggable&amp;&amp;(g=b(document.createElement("div")),g.addClass("speedo-popup-drag-area"),
+g.bind("mousedown",c),l.append(g))};return this})})(jQuery,speedo().popup);
+(function(b,j,e){j.fn.modules.register_module("effects",function(c){function a(a,f,h,g,k){if(f&amp;&amp;"none"!=f&amp;&amp;(!e().browser.is_ie||9=e().browser.version.high&amp;&amp;l.get(0).style.removeAttribute("filter",!1)})};return j})})(jQuery,speedo().popup,speedo);
+(function(b,j,e,c){j.fn.modules.register_module("smartskin",function(a){function e(){j.SmartSkin.run_skin(a.theme,l);if(void 0!=b.speedoPopup.smartSkins[a.theme])b.speedoPopup.smartSkins<a href="d,g">a.theme</a>}b(c);var g=this.container,d=this.overlay,l=this;this.init=function(){l.extend.add_action("show",e)};return l});j.SmartSkin=new function(){var a={};this.register_skin=function(b,c){a[b]=c};this.run_skin=function(b,c){if(void 0!=a[b])a<a href="c.overlay,c.container">b</a>}}})(jQuery,speedo().popup,speedo,window);
+(function(b,j,e,c){j.fn.modules.register_module("audio",function(a){function e(){d.load_audio(a.mp3Path,a.oggPath)}function g(){d.audio_element.stop().animate({volume:0},"slow",function(){d.audio_element.remove()})}b(c);var d=this;this.audio_element=null;this.init=function(){a=b.extend(a,{autoplayAudio:!0,loop:!1,mp3Path:void 0,oggPath:void 0,volume:1,onAudioStart:function(){},onAudioStop:function(){}});if(void 0!=a.mp3Path||void 0!=a.oggPath)d.extend.add_action("show",e),d.extend.add_action("hide",
+g)};this.load_audio=function(c,e){var g=b(document.createElement("audio"));a.autoplayAudio&amp;&amp;g.attr("autoplay","autoplay");a.loop&amp;&amp;g.attr("loop","loop");g.get(0).volume=0;g.bind("play",function(b){a.onAudioStart(b);d.audio_element.stop().animate({volume:a.volume},2E3)});g.bind("stop pause ended",a.onAudioStop);var h=b(document.createElement("source"));h.attr("src",e).attr("type","audio/ogg");g.append(h);h=b(document.createElement("source"));h.attr("src",c).attr("type","audio/mpeg");g.append(h);b("body").append(g);
+d.audio_element=g};this.play_audio=function(){null!=d.audio_element&amp;&amp;d.audio_element.get(0).play()};this.stop_audio=function(){null!=d.audio_element&amp;&amp;d.audio_element.get(0).pause()};this.get_audio_element=function(){return this.audio_element};return d})})(jQuery,speedo().popup,speedo,window);
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Turbo1 maintained by <a href="https://github.com/Harryjack2">Harryjack2</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
